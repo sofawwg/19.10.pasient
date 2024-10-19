@@ -1,0 +1,345 @@
+{
+  "author": "Unnamed",
+  "title": "Untitled Diagram",
+  "date": "2024-10-19T14:30:37.844Z",
+  "tables": [
+    {
+      "id": 0,
+      "name": "Пациент",
+      "x": -923.6797953821415,
+      "y": -444.095238095238,
+      "fields": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": 0
+        },
+        {
+          "name": "ФИО",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": 1,
+          "size": "",
+          "values": []
+        },
+        {
+          "name": "Пол",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": 2,
+          "size": 65535
+        },
+        {
+          "name": "Номер телефона",
+          "type": "CHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": 3,
+          "size": 1
+        },
+        {
+          "name": "Дата Рождения",
+          "type": "DATE",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": 4,
+          "size": "",
+          "values": []
+        }
+      ],
+      "comment": "",
+      "indices": [
+        {
+          "id": 0,
+          "name": "Пациент_index_0",
+          "unique": false,
+          "fields": []
+        }
+      ],
+      "color": "#175e7a",
+      "key": 1729347189647
+    },
+    {
+      "id": 1,
+      "name": "измерения с датчиков",
+      "x": -593.7122681466495,
+      "y": -443.8355640323292,
+      "fields": [
+        {
+          "name": "id пациента",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": 0
+        },
+        {
+          "name": "Дата измерения",
+          "type": "DATE",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": 1,
+          "size": "",
+          "values": []
+        },
+        {
+          "name": "Холтер (ЧСС)",
+          "type": "",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": 2
+        },
+        {
+          "name": "Тонометр(Давление)",
+          "type": "",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": 3
+        },
+        {
+          "name": "Глюкометр(Глюкоза в крови)",
+          "type": "",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": 4
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a",
+      "key": 1729347480740
+    },
+    {
+      "id": 2,
+      "name": "Уведомления",
+      "x": -930.8551252895063,
+      "y": -178.12127831804338,
+      "fields": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": 0
+        },
+        {
+          "name": "id пациента",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": 1,
+          "size": "",
+          "values": []
+        },
+        {
+          "name": "Сообщение",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": 2,
+          "size": 65535
+        },
+        {
+          "name": "Дата отправления",
+          "type": "DATE",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": 3,
+          "size": "",
+          "values": []
+        },
+        {
+          "name": "id Врача",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "id": 4,
+          "size": "",
+          "values": []
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#6360f7",
+      "key": 1729347646126
+    },
+    {
+      "id": 3,
+      "name": "Врач",
+      "x": -507.99798243236353,
+      "y": -153.3593735561386,
+      "fields": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": 0
+        },
+        {
+          "name": "ФИО",
+          "type": "",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": 1
+        },
+        {
+          "name": "Специализация",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": 2,
+          "size": 65535
+        },
+        {
+          "name": "Номер телефона",
+          "type": "CHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": 3,
+          "size": 1
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a",
+      "key": 1729347890036
+    }
+  ],
+  "relationships": [
+    {
+      "startTableId": 0,
+      "startFieldId": 0,
+      "endTableId": 1,
+      "endFieldId": 0,
+      "cardinality": "one_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "Пациент_id_fk",
+      "id": 0
+    },
+    {
+      "startTableId": 0,
+      "startFieldId": 1,
+      "endTableId": 2,
+      "endFieldId": 1,
+      "cardinality": "one_to_many",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "Пациент_ФИО_fk",
+      "id": 1
+    },
+    {
+      "startTableId": 3,
+      "startFieldId": 0,
+      "endTableId": 2,
+      "endFieldId": 4,
+      "cardinality": "one_to_many",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "Врач_id_fk",
+      "id": 2
+    }
+  ],
+  "notes": [],
+  "subjectAreas": [],
+  "database": "mysql"
+}
